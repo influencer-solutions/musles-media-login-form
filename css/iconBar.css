@@ -1,0 +1,212 @@
+﻿
+/* Header Icons */
+
+div.iconBar {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+div.header div.iconBar > a {
+    color: transparent;
+    display: inline-block;
+    font-size: 0;
+    height: 40px;
+    overflow: hidden;
+    text-indent: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 40px; 
+}
+
+.iconBar a#regularHeader_multiHomeMenuOpen, .iconBar a#regularHeader_multiHomeMenuClose {
+    width: 23px;
+}
+
+.iconBar a, .iconBar a:hover, .iconBar a:focus {
+    text-decoration: none;
+}
+
+a#regularHeader_homeLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -41px 0;
+}
+
+a#regularHeader_homeLink:hover, .iconBar a#regularHeader_homeLink:focus {
+    background-position: 0 0;
+}
+
+a#regularHeader_multiHomeLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -164px -82px;
+}
+
+a#regularHeader_multiHomeLink:hover, .iconBar a#regularHeader_multiHomeLink:focus {
+    background-position: -205px -82px;
+}
+
+a#regularHeader_multiHomeMenuOpen {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -82px -82px;
+}
+
+a#regularHeader_multiHomeMenuOpen:hover, a#regularHeader_multiHomeMenuOpen:focus  {
+    background-position: -123px -82px;
+}
+
+a#regularHeader_multiHomeMenuClose {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: 0 -82px;
+}
+
+a#regularHeader_multiHomeMenuClose:hover, a#regularHeader_multiHomeMenuClose:focus  {
+    background-position: -41px -82px;
+}
+
+a#regularHeader_webmailLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -451px -41px;
+}
+
+a#regularHeader_webmailLink:hover, a#regularHeader_webmailLink:focus {
+    background-position: -410px -41px;
+}
+
+a#regularHeader_webmailLink.animated {
+    background-image: url(/images/toolbar/ca_icons_webmail_animated.gif);
+    background-position: 0 0;
+}
+
+a#regularHeader_webmailLink.animated:hover, a#regularHeader_webmailLink.animated:focus {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -410px -82px;
+}
+
+a#regularHeader_plannerLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -123px -41px;
+}
+
+a#regularHeader_plannerLink:hover, a#regularHeader_plannerLink:focus {
+    background-position: -82px -41px;
+}
+
+a#regularHeader_libraryLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -451px 0;
+}
+
+a#regularHeader_libraryLink:hover, a#regularHeader_libraryLink:focus {
+    background-position: -410px 0;
+}
+
+a#regularHeader_forumsLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -205px 0;
+}
+
+a#regularHeader_forumsLink:hover, a#regularHeader_forumsLink:focus {
+    background-position: -164px 0;
+}
+
+a#regularHeader_usersLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -369px -41px;
+}
+
+a#regularHeader_usersLink:hover, a#regularHeader_usersLink:focus {
+    background-position: -328px -41px;
+}
+
+a#regularHeader_rolesLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -205px -41px;
+}
+
+a#regularHeader_rolesLink:hover, a#regularHeader_rolesLink:focus {
+    background-position: -164px -41px;
+}
+
+a#regularHeader_locationsLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -41px -41px;
+}
+
+a#regularHeader_locationsLink:hover, a#regularHeader_locationsLink:focus {
+    background-position: 0 -41px;
+}
+
+a#regularHeader_sectionsLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -287px -41px;
+}
+
+a#regularHeader_sectionsLink:hover, a#regularHeader_sectionsLink:focus {
+    background-position: -246px -41px;
+}
+
+a#regularHeader_issueLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -369px 0;
+}
+
+a#regularHeader_issueLink:hover, a#regularHeader_issueLink:focus {
+    background-position: -328px 0;
+}
+
+a#regularHeader_directoryLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -123px 0;
+}
+
+a#regularHeader_directoryLink:hover, a#regularHeader_directoryLink:focus {
+    background-position: -82px 0;
+}
+
+a#regularHeader_helpLink {
+    background-image: url("/images/toolbar/toolbarSprites.png");
+    background-position: -287px 0;
+}
+
+a#regularHeader_helpLink:hover, a#regularHeader_helpLink:focus {
+    background-position: -246px 0;
+}
+
+div#regularHeader_headerDiv.header {
+    margin-top: -2px;
+}
+
+div#regularHeader_headerDiv.header.headerBackgroundBlue {
+    background: url("/images/toolbar/headerBackgroundBlue.gif") repeat-x;
+}
+
+div#regularHeader_headerDiv.header.headerBackgroundRed {
+    background: url("/images/toolbar/headerBackgroundRed.gif") repeat-x;
+}
+
+div#regularHeader_headerDiv.header.headerBackgroundGreen {
+    background: url("/images/toolbar/headerBackgroundGreen.gif") repeat-x;
+}
+
+div#regularHeader_headerDiv.header.headerBackgroundOrange {
+    background: url("/images/toolbar/headerBackgroundOrange.gif") repeat-x;
+}
+
+div#regularHeader_headerDiv.header.headerBackgroundPurple {
+    background: url("/images/toolbar/headerBackgroundPurple.gif") repeat-x;
+}
+
+div.header, div.headerDivider {
+	color: #ffffff;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.imgBgcolor {
+	background-color: #003399;
+	margin: 4px;
+	margin-left: 4px;
+	padding-left: 4px;
+}
+
+

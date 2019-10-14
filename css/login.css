@@ -1,0 +1,1166 @@
+﻿/*! ************************************************************************************************
+	***     This CSS file was generated from a LESS stylesheet. Please do not edit this CSS      ***
+	***     file directly as your change will be lost. Please only edit the LESS stylesheet.     ***
+    ************************************************************************************************
+ */
+/*#region Imports*/
+/*references the LESS files rather than importing everything (Comments, etc.)*/
+/*#endregion*/
+/*#region General*/
+/* Place any general ariables, functions, styles here. 
+ * Some of these may later on move to a more general stylesheet and then be imported here.
+ */
+html {
+  font-size: 62.5%;
+}
+/*#region Tags*/
+a img {
+  border: 0;
+}
+/*#endregion*/
+/*#region IDs & Classes*/
+/*#region Environment Indicator*/
+div#environmentIndicator {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  content: "";
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  min-height: 10px;
+  opacity: .75;
+  text-indent: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+div#environmentIndicator span#environmentText {
+  font-weight: bold;
+}
+div#environmentIndicator.development,
+div#environmentIndicator.integration {
+  background: linear-gradient(to bottom, #8b46a8 1%, #651985 100%);
+}
+div#environmentIndicator.test {
+  background: linear-gradient(to bottom, #ff9600 0, #e36b00 100%);
+}
+div#environmentIndicator.TestCurrent {
+  background: linear-gradient(to bottom, #12b09f 0, #088174 100%);
+}
+div#environmentIndicator.demo {
+  background: linear-gradient(to bottom, #d24731 0, #a62a1a 100%);
+}
+div#environmentIndicator.staging {
+  background: linear-gradient(to bottom, #6fa300 0, #527800 100%);
+}
+div#environmentIndicator.BusProc {
+  background: linear-gradient(to bottom, #ff235c 0, #b0123b 100%);
+}
+div#environmentIndicator.LoadTest {
+  background: linear-gradient(to bottom, #228cff 0, #0062cc 100%);
+}
+/*#endregion*/
+/*#region Feedback */
+div.feedbackWrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  position: relative;
+  text-align: right;
+  z-index: 2;
+}
+div.feedbackWrapper a.feedback {
+  font-size: 16px;
+  font-size: 1.6rem;
+  background-color: #fff;
+  display: inline-block;
+  border: 1px solid #bfb4ae;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  padding: 11px 20px 13px 20px;
+  text-decoration: none;
+}
+div.feedbackWrapper a.feedback:hover {
+  background: #fff;
+  background: linear-gradient(to bottom, #ffffff 0, #eeeeee 100%);
+  /* W3C */
+  text-decoration: underline;
+}
+/*#endregion*/
+/*#region Footer */
+div.loginFooterWrapper {
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+div.loginFooterWrapper div.loginFooter {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding: 20px 20px;
+}
+div.loginFooterWrapper div.loginFooter:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+div.loginFooterWrapper div.loginFooter div.copyright {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #fff;
+  float: left;
+  padding: 1px 0 0 0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+div.loginFooterWrapper div.loginFooter div.copyright img {
+  margin-top: 3px;
+}
+div.loginFooterWrapper div.loginFooter div.copyright img,
+div.loginFooterWrapper div.loginFooter div.copyright span {
+  vertical-align: middle;
+}
+div.loginFooterWrapper div.loginFooter ul.footerLinks {
+  font-size: 14px;
+  font-size: 1.4rem;
+  float: right;
+  color: #999;
+  list-style-type: none;
+  margin: 0;
+  padding: 1px 0;
+}
+div.loginFooterWrapper div.loginFooter ul.footerLinks li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div.loginFooterWrapper div.loginFooter ul.footerLinks li.footerFeedback {
+  display: none;
+}
+div.loginFooterWrapper div.loginFooter ul.footerLinks a {
+  color: #65aeff;
+  display: inline-block;
+  margin: 0 2px;
+  padding: 5px;
+  text-shadow: 0 0 2px #000;
+  transition: background ease-in 0.3s;
+}
+div.loginFooterWrapper div.loginFooter ul.footerLinks a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  color: #fff;
+}
+@media all and (max-width: 1140px) {
+  div.loginFooterWrapper div.loginFooter ul.footerLinks {
+    float: none;
+    clear: both;
+  }
+}
+@media all and (max-width: 640px) {
+  html {
+    font-size: 100%;
+  }
+  div.loginFooterWrapper {
+    background: none;
+    position: static;
+    border-top: 1px solid #ccc;
+  }
+  div.loginFooterWrapper div.loginFooter {
+    margin: 0 auto;
+    padding: 12px 20px;
+    width: auto;
+  }
+  div.loginFooterWrapper div.loginFooter div.copyright,
+  div.loginFooterWrapper div.loginFooter ul.footerlinks {
+    padding: 10px 0;
+  }
+  div.loginFooterWrapper div.loginFooter div.copyright {
+    font-size: 10px;
+    font-size: 1rem;
+    float: none;
+    text-shadow: none;
+  }
+  div.loginFooterWrapper div.loginFooter div.copyright img,
+  div.loginFooterWrapper div.loginFooter div.copyright span {
+    display: block;
+  }
+  div.loginFooterWrapper div.loginFooter div.copyright span {
+    color: #333;
+  }
+  div.loginFooterWrapper div.loginFooter ul.footerLinks {
+    font-size: 10px;
+    font-size: 1rem;
+    clear: both;
+    float: none;
+    padding: 10px 0;
+  }
+  div.loginFooterWrapper div.loginFooter ul.footerLinks li {
+    padding: 5px 0;
+  }
+  div.loginFooterWrapper div.loginFooter ul.footerLinks li.footerFeedback {
+    display: inline-block;
+  }
+  div.loginFooterWrapper div.loginFooter ul.footerLinks a {
+    color: #65aeff;
+    margin: 0 10px 0 0;
+    padding: 0;
+    text-shadow: none;
+  }
+  div.loginFooterWrapper div.loginFooter ul.footerLinks a:hover {
+    background: transparent;
+    color: #005BC0;
+  }
+}
+/*#endregion*/
+/*#endregion*/
+/*#endregion*/
+/*#region Login*/
+/*#region Login Icon Sprite*/
+.loginPage .cxIcon,
+.multipleUsers .cxIcon {
+  background-image: url(../../images/loginIconSprites.png);
+}
+.cxIcon.phoneIcon {
+  width: 16px;
+  height: 16px;
+  background-position: 0 0;
+  margin: 0 3px 0 0;
+}
+.cxIcon.emailIcon {
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+  background-position: 0 -30px;
+}
+.cxIcon.preSelectIcon {
+  background-position: 0 -360px;
+  width: 23px;
+  height: 16px;
+}
+.cxIcon.invalidIcon {
+  background-position: 2px -260px;
+  width: 20px;
+  height: 16px;
+}
+/*#endregion*/
+div.pageWrapper {
+  height: 100%;
+}
+div.mainContent {
+  position: relative;
+  height: 100%;
+}
+html,
+body {
+  font-family: 'Source Sans Pro', Helvetica, Verdana, Sans-Serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizelegibility;
+}
+div.loginPage {
+  min-height: 100%;
+  position: relative;
+}
+div.loginPage a {
+  color: #0f65df;
+}
+div.loginPage a:hover {
+  color: #022c69;
+}
+div.loginPage div.loginWrapper {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 1120px;
+  /* Clear login wrapper*/
+}
+div.loginPage div.loginWrapper:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+div.loginPage div.loginWrapper div.loginContent {
+  float: right;
+  padding-bottom: 20px;
+  width: 560px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  position: relative;
+  z-index: 2;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain h1 {
+  font-family: Lato, Helvetica, Verdana, Sans-Serif;
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 125%;
+  margin: .1em 0 .5em 0;
+  padding: 0;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain p {
+  line-height: 1.5;
+  margin: 0;
+  padding: .15em 0;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginMessaging p.welcomeMessage,
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginMessagingNoLogo p.welcomeMessage {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginMessaging {
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top;
+  width: 315px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginLogo {
+  display: inline-block;
+  overflow: hidden;
+  text-align: right;
+  vertical-align: top;
+  width: 140px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginLogo img {
+  max-height: 140px;
+  max-width: 140px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain img#skinnedLogo {
+  display: block;
+  max-height: 30px;
+  max-width: 230px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain span.alertMsg {
+  background-position: 0 -256px;
+  display: inline-block;
+  float: left;
+  height: 20px;
+  vertical-align: middle;
+  width: 25px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMaindiv.noLogo p {
+  line-height: 1.55;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMaindiv.noLogo p div.loginMessaging {
+  margin-right: 0;
+  width: auto;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert {
+  background: #be3900;
+  /* Old browsers */
+  background: -webkit-linear-gradient(top, #d44a00 0, #b73400 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #d44a00 0, #b73400 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d44a00 0, #b73400 100%);
+  /* W3C */
+  color: #fff;
+  display: block;
+  margin: 12px -40px 7px -40px;
+  padding: 15px 30px 16px 30px;
+  position: relative;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert h2,
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert h3 {
+  color: #fff;
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: .04em 0 .12em 0;
+  padding: 0;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: .4em 0 .2em 0;
+  vertical-align: middle;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert a {
+  color: #fff;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg p {
+  width: 320px;
+  display: inline-block;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul {
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  vertical-align: top;
+  list-style-type: none;
+  margin: 0;
+  padding: .2em .0em .4em .2em;
+  text-align: center;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li span.browser {
+  display: block;
+  padding-top: 5px;
+  vertical-align: middle;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li span.cxIcon {
+  height: 26px;
+  width: 28px;
+  opacity: 0.7;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li span.internetExplorer {
+  background-position: 0 -60px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li span.chrome {
+  background-position: 0 -110px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li span.firefox {
+  background-position: 0 -160px;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li a {
+  cursor: pointer;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li a:hover {
+  color: #fff;
+}
+div.loginPage div.loginWrapper div.loginContent div.loginMain div.browserAlert .windowsUpgradeMsg ul li a:hover .cxIcon {
+  opacity: 1;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm {
+  padding: 15px 0 5px 0;
+  /*09/11/14 - SJK: Style appears to be obsolete.*/
+  /*.loginInvalidMessage {
+					color: #e42000;
+					display: block; 
+					font-weight: 400;
+					font-size: .85em;										
+					padding: 0 0 12px 0;
+
+					.cxIcon {
+						height: 17px;
+						margin-right: 8px;
+						vertical-align: middle;
+					}
+				}*/
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm input.field[disabled] {
+  border-color: #ccc;
+  color: #999;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm input.field[disabled]:hover {
+  box-shadow: none;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.fieldWrapper {
+  display: inline-block;
+  overflow: visible;
+  position: relative;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.fieldWrapper label {
+  color: #555;
+  cursor: text;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-style: italic;
+  left: 8px;
+  padding: 4px;
+  position: absolute;
+  top: 4px;
+  white-space: nowrap;
+  z-index: 1;
+  transition: opacity .2s;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.fieldWrapper label.hasFocus {
+  opacity: .25;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.fieldWrapper label.hasSomething {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm input[type=text].field,
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm input[type=password].field {
+  border-radius: 5px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin: 0 3px 0 0;
+  padding: 5px 5px 7px 7px;
+  width: 170px;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm a.submit {
+  color: #fff;
+  margin: 0;
+  margin-right: -5px;
+  padding: 7px 18px;
+  transition: background-position ease-in 0.15s;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm a.submit:hover {
+  color: #fff;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions {
+  margin-top: 6px;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions div.rememberWrapper {
+  display: inline-block;
+  width: 192px;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions div.rememberWrapper label {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions a.didYouForget {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+div.loginSupport {
+  background: #efefef;
+  background: linear-gradient(to bottom, #e6e9f2 0, #dcdee5 100%);
+  /* W3C */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: -15px;
+  padding: 33px 30px 20px 35px;
+}
+div.loginSupport div.support {
+  display: inline-block;
+  width: 305px;
+}
+div.loginSupport p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: .3em;
+}
+div.loginSupport ul.supportInfo {
+  font-size: 13px;
+  font-size: 1.3rem;
+  list-style: none;
+  margin: 6px 0 2px 0;
+  padding: 0;
+}
+div.loginSupport ul.supportInfo li {
+  display: inline-block;
+  margin: 0 .75em 0 0;
+  padding: 0;
+}
+div.loginSupport div.representative {
+  border-left: 1px solid #ccc;
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: top;
+  width: 160px;
+}
+div.loginSupport a.getSupport {
+  display: block;
+  margin: 8px 0 2px 0;
+}
+div.loginSupport .loginWarningPanel {
+  margin-top: 30px;
+  border-top: 1px solid #E68B8B;
+  border-top: 1px solid rgba(230, 139, 139, 0.5);
+  padding: 10px 0;
+  border-bottom: 1px solid #E68B8B;
+  border-bottom: 1px solid rgba(230, 139, 139, 0.5);
+  color: #9a4545;
+}
+div.expiredPasswordArea {
+  border-top: 1px dashed #ccc;
+  margin-top: 15px;
+}
+div.expiredPasswordArea div.expiredPasswordMessage {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: top;
+}
+div.expiredPasswordArea div.expiredPasswordFields {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+div.expiredPasswordArea div.expiredPasswordFields input[type="password"].field {
+  margin-bottom: 10px;
+}
+div.expiredPasswordArea div.expiredPasswordFields.singleFieldRow {
+  width: 100%;
+}
+/*#region Multiple Impersonation*/
+.cxlWrapper.chooseUser .cxlContent {
+  max-width: 620px;
+}
+.overlayDescription {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 3px 0;
+}
+.multipleUsers {
+  margin: 15px 0;
+}
+.multipleUserID {
+  min-width: 70px;
+}
+.multipleUser {
+  min-width: 150px;
+}
+.multipleUsername {
+  min-width: 130px;
+}
+.multipleSelect {
+  min-width: 70px;
+}
+.multipleUsers .cxTable {
+  width: 100%;
+}
+.multipleUsers .cxTable th {
+  text-align: left;
+  padding: 7px 5px;
+}
+.multipleUsers .cxTable td {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.multipleUsers .cxTable tr a {
+  text-decoration: none;
+  color: #9e9e9e;
+}
+.multipleUsers .cxTable tr:hover {
+  background: #fffdf2;
+  /* Old browsers */
+  background: -webkit-linear-gradient(top, #fff 0%, #eee 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #fff 0%, #eee 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  /* W3C */
+  cursor: pointer;
+}
+.multipleUsers .cxTable tr:hover .cxIcon.preSelectIcon {
+  background-position: 0 -330px;
+}
+.multipleUsers .cxTable tr.selected {
+  background: #fffdf2;
+  /* Old browsers */
+  background: -webkit-linear-gradient(top, #fffdf2 0%, #fff8ce 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top, #fffdf2 0%, #fff8ce 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fffdf2 0%, #fff8ce 100%);
+  /* W3C */
+  cursor: pointer;
+}
+.multipleUsers .cxTable tr.selected .cxIcon.preSelectIcon {
+  background-position: 0 -330px;
+}
+.multipleUsers .cxTable tr.selected a {
+  color: #666;
+}
+.multipleUsers .cxTable tr > td:last-child {
+  color: #9e9e9e;
+}
+.multipleUsers .cxTable tr:hover > td:last-child,
+.multipleUsers .cxTable tr.selected > td:last-child {
+  color: #000;
+}
+.multipleUsers .cxTable .selectUserWrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 2px;
+}
+.multipleUsers .cxTable .selectUserWrapper input[type=radio] {
+  position: absolute;
+  left: -20px;
+  width: 18px;
+  padding: 0;
+  margin: 0;
+}
+.multipleUsers .cxTable .selectUserWrapper label {
+  display: block;
+  padding: 3px;
+  white-space: nowrap;
+  text-align: left;
+}
+.multipleUsers .cxTable .selectUserWrapper input[type=radio]:focus + label {
+  outline: 1px dotted #666;
+  outline: -webkit-focus-ring-color auto 5px;
+  overflow: visible;
+}
+/*#endregion*/
+/*#region Invalid Entry */
+.invalidLogin {
+  background-color: #fff4f4;
+  border-bottom: 1px solid #e4877d;
+  border-top: 1px solid #e4877d;
+  color: #cc3425;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 15px 0;
+  padding: 10px;
+}
+.invalidLogin .errorText {
+  vertical-align: middle;
+}
+.loginMain .invalidMessage {
+  color: #da362e;
+  padding: 0 3px 5px 0;
+}
+.loginMain .invalidMessage:before {
+  content: none;
+}
+@media all and (max-width: 640px) {
+  .loginMain .invalidMessage {
+    font-size: 1rem;
+  }
+}
+.loginMain .validationWrapper {
+  padding-top: 8px;
+}
+.loginMain .passwordInstructions {
+  font-size: 1.3rem;
+}
+@media all and (max-width: 640px) {
+  .loginMain .passwordInstructions {
+    font-size: 1rem;
+  }
+}
+/*09/05/14 - SJK: Looks duplicate when compared to invalidLogin above.*/
+/*div.cxForm div.invalidSummary {
+	border-bottom: 1px solid #e4877d;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid #e4877d;
+	box-shadow: none;
+	display:none;	
+	.mix-font-size-l;	
+	margin: 15px 0 5px 0;
+	padding: 10px 10px 0 10px;
+
+	p {
+		//TODO: 07/11/14 - SJK: Not good. Work with the selectors to not have to use !important.
+		padding:2px 0 2px 22px !important;
+	}
+}*/
+/*#endregion*/
+/*#region Login Media Queries*/
+/* 07/11/14 - SJK: It's easier to keep all media queries grouped here but following the same selector hiearchy 
+ * (this is important!). Interspersing media queries inside selectors above made this much less structured and manageable.
+ */
+@media all and (max-width: 1140px) {
+  div.feedbackWrapper {
+    width: auto;
+    padding-right: 20px;
+  }
+  div.loginPage div.loginWrapper {
+    width: 560px;
+  }
+  div.loginPage div.loginWrapper div.loginContent {
+    width: auto;
+    float: none;
+  }
+  .multipleUsers .cxTable tr > td:last-child {
+    text-align: center;
+  }
+}
+@media all and (max-width: 750px) {
+  .cxlWrapper .cxlContent {
+    width: 100% !important;
+  }
+  .cxTable td {
+    padding: 4px 0 5px 7px;
+    border-bottom: 1px solid #e2e2e2;
+    /*font-size: 13px;*/
+  }
+  .cxTable .multipleUserID {
+    min-width: 55px;
+    max-width: 100px;
+  }
+  .cxTable .multipleUser {
+    min-width: 80px;
+    max-width: 150px;
+  }
+  .cxTable .multipleUsername {
+    min-width: 100px;
+  }
+}
+@media all and (max-width: 640px) {
+  .chooseUser .cxlContent {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .chooseUser .cxlContent h2 {
+    font-family: Lato, Helvetica, Verdana, Sans-Serif;
+    font-size: 13.75px;
+    font-size: 1.375rem;
+  }
+  .chooseUser .cxlContent .overlayDescription {
+    display: none;
+  }
+  table#impersonationTable th,
+  table#impersonationTable td {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+  }
+  .multipleUsers tr td:nth-child(3),
+  .multipleUsers tr th:nth-child(3) {
+    display: none;
+  }
+  .multipleUserSelectText {
+    display: none;
+  }
+  div#environmentIndicator {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+    text-indent: 25px;
+  }
+  div.loginPage:before,
+  .bgBranding,
+  div.feedbackWrapper,
+  div.loginMessaging {
+    display: none;
+  }
+  div.mainContent {
+    padding: 0;
+    height: auto;
+  }
+  div.mainContent div.loginPage {
+    height: auto;
+    min-height: 0;
+  }
+  div.mainContent div.loginPage div.loginWrapper {
+    padding: 20px;
+    width: auto;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent {
+    padding-bottom: 0;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent div.loginMain img#skinnedLogo {
+    margin: 10px auto;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginLogo {
+    margin: 0 auto 10px auto;
+    text-align: center;
+    display: block;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginLogo img {
+    margin: 10px auto;
+    max-width: 85px;
+    max-height: 85px;
+    display: inline;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin: 0 -20px;
+    padding: 20px;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.fieldWrapper {
+    display: block;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.fieldWrapper label {
+    /*.mix-font-size-s;*/
+    font-size: 10px;
+    font-size: 1rem;
+    left: 8px;
+    top: 8px;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.fieldWrapper input.field {
+    font-size: 11.25px;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions div.rememberWrapper,
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions a.didYouForget {
+    display: block;
+    padding: 4px 0;
+    width: auto;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions div.rememberWrapper label {
+    font-size: 10px;
+    font-size: 1rem;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent fieldset.loginForm div.loginOptions a.didYouForget {
+    font-size: 10px;
+    font-size: 1rem;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent div.loginMain {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  div.mainContent div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginMessaging,
+  div.mainContent div.loginPage div.loginWrapper div.loginContent div.loginMain div.loginMessagingNoLogo {
+    display: none;
+  }
+  div.mainContent div.loginPage div.loginWrapper .loginBox.forgotPassword {
+    padding: 25px;
+  }
+  div.mainContent div.loginPage div.loginWrapper .loginBox.forgotPassword div.loginMain {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  div.mainContent div.loginPage div.loginWrapper .fieldset {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: auto;
+    padding: 20px;
+  }
+  div.loginSupport {
+    background: #fff;
+    box-shadow: none;
+    padding: 0 0 10px 0;
+    margin: 0 auto;
+    width: auto;
+  }
+  div.loginSupport h2 {
+    display: block;
+    font-weight: normal;
+    padding: .6em 0 .3em 0;
+    position: static;
+    left: inherit;
+    z-index: inherit;
+    text-indent: 0;
+    height: auto;
+    width: auto;
+  }
+  div.loginSupport p {
+    display: block;
+    font-size: 8.75px;
+    font-size: 0.875rem;
+    padding: .1em 0;
+  }
+  div.loginSupport p br {
+    display: none;
+  }
+  div.loginSupport div.support ul {
+    font-size: 10px;
+    font-size: 1rem;
+    margin: 2px 0;
+  }
+  div.loginSupport div.representative,
+  div.loginSupport div.support {
+    border: none;
+    padding-top: 10px;
+    padding-left: 0;
+    width: auto;
+  }
+  div.loginSupport div.representative a.getSupport {
+    padding-top: 0;
+  }
+  div.expiredPasswordArea div.expiredPasswordMessage {
+    width: 100%;
+  }
+  div.expiredPasswordArea div.expiredPasswordFields {
+    width: 100%;
+  }
+  .loginMain.forgotPassword .loginMessaging {
+    display: block;
+  }
+  div.loginWrapper {
+    position: initial;
+  }
+  .invalidLogin {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+  }
+  div.loginPage div.loginWrapper div.loginContent div.loginMain h1 {
+    font-size: 18.75px;
+    font-size: 1.875rem;
+  }
+  /*#region Buttons*/
+  body .cxBtn,
+  .ie8 div .cxBtnLegacy {
+    font-size: 11.25px;
+    font-size: 1.125rem;
+  }
+  /*#endregion*/
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .loginPage .cxIcon,
+  .multipleUsers .cxIcon {
+    background-image: url(../../images/loginIconSprites@2x.png);
+  }
+  .multipleUsers .cxTable .cxIcon.preSelectIcon {
+    height: 20px;
+  }
+}
+/*#endregion*/
+/*#endregion*/
+/*#region Forgot Password */
+div.loginWrapper div.loginContent div.forgotPassword div.loginMessagingNoLogo {
+  display: block !important;
+}
+div.loginWrapper div.loginContent div.forgotPassword div.loginMessagingNoLogo p.forgotPasswordMessage {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+div.loginWrapper div.loginContent div.forgotPassword ul.supportInfo {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 0;
+}
+div.loginWrapper div.loginContent div.forgotPassword ul.supportInfo li {
+  display: inline-block;
+  margin: 0 .75em 0 0;
+  padding: 0;
+}
+div.loginWrapper div.loginContent div.forgotPassword fieldset.forgotPasswordForm {
+  padding: 10px 0;
+}
+div.loginWrapper div.loginContent div.forgotPassword fieldset.forgotPasswordForm div.action {
+  padding: 10px 0;
+}
+div.loginWrapper div.loginContent div.forgotPassword fieldset.forgotPasswordForm div.action a.backToLogin {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 0 1em;
+}
+div.loginWrapper div.loginContent div.forgotPassword div.captchaWrapper {
+  margin: 10px -20px;
+  padding: 15px 20px;
+}
+div.loginWrapper div.loginContent div.forgotPassword div.captchaWrapper div.resetPasswordMessage {
+  display: inline-block;
+  margin-right: 3px;
+  max-width: 250px;
+  vertical-align: top;
+}
+/*#endregion*/
+/*#region Forgot Password Media Queries*/
+@media all and (max-width: 640px) {
+  div.loginWrapper div.loginContent div.forgotPassword div.loginMessagingNoLogo p.forgotPasswordMessage {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+  }
+  div.loginWrapper div.loginContent div.forgotPassword ul.supportInfo {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+  }
+  div.loginWrapper div.loginContent div.forgotPassword fieldset.forgotPasswordForm {
+    padding: 20px;
+  }
+  div.loginWrapper div.loginContent div.forgotPassword fieldset.forgotPasswordForm div.action a.backToLogin {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+  }
+  div.loginWrapper div.loginContent div.forgotPassword div.captchaWrapper span.captchaNote,
+  div.loginWrapper div.loginContent div.forgotPassword div.captchaWrapper .LBD_CaptchaDiv a span {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+  }
+  div.resetPasswordMessage {
+    max-width: 100%;
+  }
+}
+/*#endregion*/
+/*#region TODO: --> LESS*/
+/*#region Bg Branding */
+.bgBranding {
+  overflow: hidden;
+  position: fixed;
+  background-color: #000;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.bgBranding div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.bgBranding div:last-child {
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+.cxBtn.cxBtnLogin {
+  padding: 8px 12px;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ie8 .bgBranding div {
+  background-position: center;
+}
+.ie7 .bgBranding div {
+  text-align: center;
+}
+/*#endregion*/
+/*#region IE 7*/
+html.ie8 div.loginPage div.loginWrapper div.loginContent fieldset.loginForm a.submit {
+  padding: 0;
+  padding-right: 7px;
+}
+html.ie8 div.loginPage div.loginWrapper div.loginContent fieldset.loginForm a.submit span {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+.ie7 div.loginPage div.loginWrapper div.loginContent div.loginMain {
+  padding-bottom: 20px;
+}
+.ie7 div.loginPage div.loginWrapper div.loginContent div.forgotPassword div.captchaWrapper {
+  margin: 20px 0;
+}
+.ie7 div.loginFooterWrapper div.loginFooter div.copyright {
+  float: left;
+}
+#validationSummary {
+  display: none;
+}
+.ie7 .loginMessaging,
+.ie7 .LBD_CaptchaImageDiv,
+.ie7 .LBD_CaptchaIconsDiv,
+.ie7 .footerLinks li,
+.ie7 .loginLogo,
+.ie7 .supportInfo li,
+.ie7 .loginForm .fieldWrapper,
+.ie7 .didYouForget,
+.ie7 .rememberWrapper,
+.ie7 .loginSupport .support,
+.ie7 .loginSupport .representative,
+.ie7 .copyright,
+.ie7 .browserAlert .windowsUpgradeMsg p,
+.ie7 .browserAlert .windowsUpgradeMsg ul,
+.ie7 .browserAlert .windowsUpgradeMsg li {
+  display: inline !important;
+  zoom: 1;
+}
+.ie7 .loginForm {
+  position: relative;
+}
+.ie8 .loginForm .submit {
+  line-height: 1.3;
+}
+/*#endregion*/
+/*#endregion*/
+/*# sourceMappingURL=login.css.map */
